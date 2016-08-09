@@ -4,9 +4,9 @@
 
 	function yaSuggestView ($parse, mapApiLoad, yaSubscriber) {
 		return {
-			restrict: 'A'
-			require: [ 'ngModel' ]
-			scope: {}
+			restrict: 'A',
+			require: [ 'ngModel' ],
+			scope: {},
 			link: function (scope, element, attributes, controllers) {
 				mapApiLoad(function () {
 					var suggestView = new ymaps.SuggestView(element[0]);
